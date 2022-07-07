@@ -28,9 +28,12 @@ jobs:
         run: |
           pip install pipenv
           pipenv sync --dev
-      -name: flake8
+
+      - name: flake8
+        uses: py-actions/flake8@v2
+
+
+      - name: Pytests
         run: |
-          pipenv run pytest --cov=pypro
-      -name: Coverage
-        run: |
-          pipenv run codecov
+          pipenv install --dev
+          pipenv run pytest
