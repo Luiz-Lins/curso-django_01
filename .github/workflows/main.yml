@@ -28,6 +28,7 @@ jobs:
         run: |
           pip install pipenv
           pipenv sync --dev
+          cp contrib/env-sample .env
 
       - name: flake8
         uses: py-actions/flake8@v2
