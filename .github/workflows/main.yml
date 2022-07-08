@@ -23,13 +23,11 @@ jobs:
           architecture: x64
       - name: Copiar Configurações .env
         run: |
-          - 
 
       - name: Instalar dependências
         run: |
           pip install pipenv
           pipenv sync --dev
-          cp contrib/env-sample .env
 
       - name: flake8
         uses: py-actions/flake8@v2
@@ -38,8 +36,4 @@ jobs:
       - name: Pytests
         run: |
           pipenv install --dev
-          pipenv run pytest --cov=pypro
-          pipenv run codecov
-      - name: copiar configurações .env
-        run: |
-          cp contrib/env-sample .env
+          pipenv run pytest
