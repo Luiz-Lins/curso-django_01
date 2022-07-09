@@ -36,4 +36,6 @@ jobs:
       - name: Pytests
         run: |
           pipenv run pytest --cov=pypro
-          pipenv run codecov
+
+      - name: coverage
+        run: pipenv run codecov
