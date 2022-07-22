@@ -37,30 +37,8 @@
 
 {% block body %}{% endblock body %}
 
+{% include 'base/footer.html' with contato_email='luizlins22@gmail.com' only %}
 
-<footer class="main-footer mt-5 pt-4">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Entre em contato</h3>
-                <address>
-                    +55 61 99416-8282
-                    <br/>
-                    <a href="mailto:luizlins22@gmail.com">luizlins22@gmail.com</a>
-                </address>
-            </div>
-        </div>
-    </div>
-    <div class="rights pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    {% now 'Y' %} Curso Django 01. Todos direitos reservados.
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 </body>
 </html>
