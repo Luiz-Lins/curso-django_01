@@ -1,5 +1,10 @@
+# from pyclbr import Class
+
+# from django.db import models
 from django.shortcuts import render
 from django.urls import reverse
+
+# from pypro.aperitivos.models import Video
 
 
 class Video:
@@ -13,9 +18,9 @@ class Video:
 
 
 videos = [
-        Video('motivacao', 'Video Aperitivo: Motivação', 730872873),
-        Video('instalacao-windows', 'Instalação Windows', 731597193),
-    ]
+    Video(slug='motivacao', titulo='Video Aperitivo: Motivação', vimeo_id='730872873'),
+    Video(slug='instalacao-windows', titulo='Instalação Windows', vimeo_id='731597193'),
+]
 
 videos_dct = {v.slug: v for v in videos}
 
