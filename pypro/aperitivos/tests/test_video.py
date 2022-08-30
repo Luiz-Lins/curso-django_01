@@ -18,14 +18,10 @@ def resp(client, video):
 
 @pytest.fixture
 def resp_video_nao_encontrado(client, video):
-
-
     return client.get(reverse('aperitivos:video', args=(video.slug + 'video não encontrado',)))
 
 
 def test_status_code_video_nao_encontrado(resp_video_nao_encontrado):
-
-
     assert resp_video_nao_encontrado.status_code == 404
 
 
