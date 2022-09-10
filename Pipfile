@@ -16,6 +16,8 @@ psycopg2-binary = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 django-ordered-model = "*"
+django-extensions = "*"
+model-bakery = "*"
 
 [dev-packages]
 flake8 = "*"
