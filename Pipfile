@@ -15,13 +15,16 @@ collectfast = "*"
 psycopg2-binary = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
+django-ordered-model = "*"
+django-extensions = "*"
+model-bakery = "*"
 
 [dev-packages]
 flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
-model-mommy = "*"
+model-bakery = "*"
 
 [requires]
 python_version = "3.10"
